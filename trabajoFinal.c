@@ -12,8 +12,8 @@ int cantDestinos = 4;
 int cantPasajeros = 0;
 int cantBRA = 0, cantMDQ = 0, cantMZA = 0, cantBRC = 0;
 int opcion;
-int importePasaje[100];
-int importeTotal = 0;
+float importePasaje[100];
+float importeTotal = 0;
 int seguroPasajero = 0;
 int main() {
    cargaDeDatos();
@@ -28,7 +28,7 @@ void  cargaDeDatos(){
       scanf("%d", &cantPasajeros);
       if (cantPasajeros > 100)
       {
-         printf("Valor no aceptado de pasajeros\n");
+        printf("Valor no aceptado de pasajeros\n");
       }
       
    } while (cantPasajeros > 100);
