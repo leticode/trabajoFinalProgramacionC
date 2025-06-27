@@ -2,19 +2,13 @@
 #include <string.h>
 void cargaDeDatos();
 // void menu();
-char destino[4][4];
-char codDestino[4][4] = {"BRA", "MDQ", "MZA", "BRC"};
-int dni[100];
-char apellido[100][30];
-char nombre[100][50];
-int edad[100];
-int cantDestinos = 4;
-int cantPasajeros = 0;
-int cantBRA = 0, cantMDQ = 0, cantMZA = 0, cantBRC = 0;
+char destino[4][4], codDestino[4][4] = {"BRA", "MDQ", "MZA", "BRC"};
+apellido[100][30], nombre[100][50];
+int dni[100], edad[100];
+int cantDestinos = 4, cantPasajeros = 0, cantBRA = 0, cantMDQ = 0, cantMZA = 0, cantBRC = 0;
 int opcion;
-float importePasaje[100];
-float importeTotal = 0;
 int seguroPasajero = 0;
+float importePasaje[100], importeTotal = 0;
 int main() {
    cargaDeDatos();
 //    menu();
